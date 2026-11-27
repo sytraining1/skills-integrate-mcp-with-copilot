@@ -28,6 +28,25 @@ header h1 {
   margin-bottom: 10px;
 }
 
+.auth-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.auth-controls button {
+  background-color: white;
+  color: #1a237e;
+}
+
+#user-menu-button {
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 6px 9px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +209,41 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  color: #333;
+  font-size: 24px;
+  padding: 2px 8px;
 }
 
 footer {
